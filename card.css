@@ -1,0 +1,271 @@
+body{
+    background:url(bg-main-desktop.png);
+    background-repeat: none;
+   
+}
+.card{
+    width:65%;
+    height:100vh;
+    /* position: absolute;
+    text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float:right;
+    
+    
+    padding:50px;
+    background-color: aliceblue;
+    font-family: new;
+    
+    
+   
+}
+.contentholder{
+    position: relative;
+    margin-bottom: 1.25em;
+}
+label{
+    position:absolute;
+    top:-12px;
+    font-size: 11px;
+    
+
+}
+
+#cardholder{
+    padding:10px;
+    width:80%;
+    margin:10px;
+    border-style: ridge;
+    border-color: rgba(46, 36, 36, 0.553);
+    display:inline-block;
+    border-radius:5px ;
+    outline: none;
+}
+#cardholdername{
+    padding:10px;
+    width:80%;
+    margin:10px;
+    border-style: ridge;
+    border-color: rgba(46, 36, 36, 0.553);
+    display:inline-block;
+    border-radius:5px ;
+    outline: none;
+}
+#dd{
+    width:60px;
+    padding:5px;
+    margin:20px;
+    border-right: ridge;
+    border-color: rgba(46, 36, 36, 0.553);
+    border-radius: 5px;
+    outline: none;
+
+}
+#yy{
+    width:60px;
+    padding:5px;
+    margin: 10px;
+    border:2px solid grey;
+    border-radius: 5px;
+    outline:none;
+
+}
+#cvc{
+    width:60px;
+    padding:5px;
+    margin:20px;
+    border-right: ridge;
+    border-color: rgba(46, 36, 36, 0.553);
+    border-radius: 5px;
+    outline:none;
+
+}
+#confirm{
+    width:90%;
+    padding:10px;
+    border-radius: 10px;
+    background-color: rgb(7, 7, 34);
+    color:white;
+    font-size: 20px;
+    margin:20px;
+    cursor:pointer;
+}
+#continue{
+    width:90%;
+    padding:10px;
+    border-radius: 10px;
+    background-color: rgb(7, 7, 34);
+    color:white;
+    font-size: 20px;
+    margin:20px;
+    cursor:pointer;
+}
+
+.contentholder #cardholder:focus{
+
+    border:2px solid orange;
+}
+.contentholder #cardholdername:focus{
+
+    border:2px solid orange;
+}
+.contentholder #dd:focus{
+
+    border:2px solid orange;
+}
+.contentholder #yy:focus{
+    border:2px solid orange;
+}
+.contentholder #cvc:focus{
+    border:2px solid orange;
+}
+img{
+    width:40%;
+}
+.cardimage{
+    
+   
+    width:25%;
+    height:30%;
+    position:absolute;
+    top:30%;
+    left:12%;
+    background:url(bg-card-front.png);
+    border-radius: 10px;
+   
+   
+
+}
+
+
+.cardback{
+    
+    
+    width:25%;
+    height:30%;
+    position:absolute;
+    top:65%;
+    left:15%;
+    background:url(bg-card-back.png);
+    border-radius: 10px;
+   
+
+}
+#cvc1{
+    position:absolute;
+    right:10px;
+    top:50%;
+    width:40px;
+    border:none;
+    background: transparent;
+    outline: none;
+    color:white;
+    font-size: 20px;
+}
+.dot{
+   width:40px;
+   height:40px;
+   border-color: black;
+   background-color: aliceblue;
+   border-radius: 50%;
+   display: inline-block;
+   margin: 10px;
+   margin-top:20px;
+}
+.dot2{
+    width:20px;
+    height:20px;
+    border-style: ridge;
+    border-color:rgba(240, 233, 233, 0.773);
+    background:transparent;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 10px;
+ }
+ #copy{
+    width:90%;
+    margin:10px;
+    margin-top: 60px;
+    color:white;
+    border: none;
+    background: transparent;
+   
+    font-size: 30px;
+    text-align: center;
+    outline:none;
+    
+ 
+ }
+ #copyname{
+    width:50%;
+    margin:10px;
+    border: none;
+    background: transparent;
+    font-size: 15px;
+    text-align: center;
+    outline:none;
+    color:white;
+    
+
+ }
+ #copydate{
+    width:30%;
+    margin:10px;
+    border: none;
+    background: transparent;
+    text-align: center;
+    font-size: 15px;
+    outline:none;
+    color:white;
+    
+    
+ }
+ ::placeholder{
+    color:white;
+ }
+
+ #error_num{
+    margin:10px;
+ }
+ #error_date{
+    position:absolute;
+    right:60%;
+    bottom:0;
+}
+
+
+#error_cvc{
+    position:absolute;
+    right:10%;
+    bottom:0;
+}
+
+.popup {
+    width:300px;
+    height:300px;
+    background-color:aliceblue;
+    position:absolute;
+    top:30%;
+    left:60%;
+    text-align:center;
+    padding:50px;
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s,top 0.4s; 
+    font-family: new;
+    font-size: 30px;
+}
+
+.pop-up{
+    visibility: visible;
+    top:30%;
+    left:55%;
+    transform: translate(-10%,-10%) scale(1);
+
+}
+@font-face{
+    font-family:'new';
+    src:url(KodeMono-VariableFont_wght.ttf)
+}

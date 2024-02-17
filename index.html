@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            INTERACTIVE CARD
+        </title>
+        <link rel="stylesheet" href="card.css">
+    </head>
+    <body>
+        <div class="card">
+            <form id="cardFORM">
+            <div class="contentholder">
+                <label for="name">CARDHOLDER NAME</label>
+                <input type="text" id="cardholdername" required>
+            </div>
+                <div class="contentholder">
+                <label for="num">CARD NUMBER</label>
+                <input type="text" id="cardholder" maxlength="16" required><br>
+                <div id="error_num" style="color:red"></div>
+            </div>
+                <div class="contentholder">
+                <label for="date">EXP .DATE(MM/YY)</label>
+                <input type="text" id="dd" placeholder="MM" maxlength="2">
+                <input type="text" id="yy" placeholder="YY" maxlength="2">
+            
+                
+           
+                <label for="name">CVC</label>
+                <input type="text" id="cvc" placeholder="eg.123" maxlength="3">
+                <span id="error_date" style="color:red"></span>
+                <!-- <span id="error_date1" style="color:red"></span> -->
+                <span id="error_cvc" style="color:red"></span>
+                
+            </div>
+            
+           
+           
+            
+           
+            <input type="submit" id="confirm" value="confirm" onclick="showPopup()" disabled>
+        </form>
+        </div>
+        <div class="cardimage">
+            <span class="dot"></span>
+            <span class="dot2"></span><br>
+           <input type="text" id="copy" placeholder="xxxx xxxx xxxx xxxx"><br>
+           <input type="text" id="copyname" placeholder="NAME">
+           <input type="text" id="copydate" placeholder="MM/YY">
+
+
+        </div>
+        <div class="cardback">
+            <input type="text" id="cvc1" placeholder="000">
+        </div>
+        <div class="popup" id="pop">
+            <table>
+                <tr>
+           <td><img src="icon-complete.svg"></td>
+        </tr>
+        <tr>
+            <td><h2>Thank you!</h2></td>
+        </tr>
+        <tr>
+            <td>We've added your card details</td>
+        </tr>
+
+            <tr>
+                <td>
+            <input type="submit" id="continue" value="Continue" onclick="closepopup()" >
+        </td>
+        </tr>
+        
+        </table>
+        </div>
+        <script src="card.js"></script>
+    </body>
+</html>
